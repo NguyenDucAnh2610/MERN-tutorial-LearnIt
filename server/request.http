@@ -1,0 +1,49 @@
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+    "username": "jiim",
+    "password": "jiim"
+}
+###
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+    "username": "ducanhtest",
+    "password": "ducanh"
+}
+
+###
+
+POST http://localhost:5000/api/posts
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2Mjk3MGUzYWI0ZTlmNDBmNGM2OTEyZTYiLCJpYXQiOjE2NTQyNTg4NzR9.Oa-EQEoHM9r5XrAL0rKI42dDJp-rZuDLkqOon5YphZ8
+
+{
+    "title": "Angular",
+    "description": "angularjs",
+    "url": "react.com",
+    "status": "TO LEARN"
+}
+###
+GET http://localhost:5000/api/posts
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2Mjk3MGUzYWI0ZTlmNDBmNGM2OTEyZTYiLCJpYXQiOjE2NTQwNzE4OTl9.J6RLqEDOzkEeRNSg1g3b6cGGNinRlEFHJTvl990KY2c
+
+### 
+PUT http://localhost:5000/api/posts/62971f42b24c2ff6ae6a83a6
+content-type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2Mjk3MGUzYWI0ZTlmNDBmNGM2OTEyZTYiLCJpYXQiOjE2NTQwNzE4OTl9.J6RLqEDOzkEeRNSg1g3b6cGGNinRlEFHJTvl990KY2c
+
+{
+    "title": "Vue",
+    "description": "VUEEEE",
+    "url": "https://vuejs.org",
+    "status": "LEARNING"
+
+}
+
+###
+DELETE http://localhost:5000/api/posts/62971f42b24c2ff6ae6a83a6
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2Mjk3MGUzYWI0ZTlmNDBmNGM2OTEyZTYiLCJpYXQiOjE2NTQwNzE4OTl9.J6RLqEDOzkEeRNSg1g3b6cGGNinRlEFHJTvl990KY2c
+
